@@ -1,0 +1,417 @@
+:root {
+--Dark-Blue: hsl(233, 26%, 24%);
+--Lime-Green: hsl(136, 65%, 51%);
+--Bright-Cyan: hsl(192, 70%, 51%);
+--Grayish-Blue: hsl(233, 8%, 62%);
+--Light-Grayish-Blue: hsl(220, 16%, 96%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+  font-size: 18px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+
+/*******ALL VIEW*******/
+
+/* CONTAINER 1 */
+.imageMockups{
+  max-width: 100%;
+  height: auto;
+
+}
+
+.buttonRequestInvite1, .buttonRequestInvite2{
+  width: 10rem;
+  height: 2.5rem;
+  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.buttonRequestInvite1:hover, .buttonRequestInvite2:hover, .buttonRequestInvite3:hover{
+  opacity: 0.7;
+}
+
+h1{
+  color: var(--Dark-Blue)
+}
+
+.container1AParagraph{
+  color: var(--Grayish-Blue)
+}
+
+/* CONTAINER 2 */
+.container2{
+  background-color: var(--Very-Light-Gray);
+}
+
+h2{
+  color: var(--Dark-Blue)
+}
+
+.container2Paragraph{
+  color: var(--Grayish-Blue);
+  margin: 0px;
+}
+
+/* CONTAINER 3 */
+.mt-3{
+  color: var(--Grayish-Blue)
+}
+
+h6{
+  color: var(--Dark-Blue)!important;
+}
+
+.p-4{
+  background-color: var(--Very-Light-Gray);
+}
+
+/* CONTAINER 4 */
+.container4, h4{
+  background-color: var(--Very-Light-Gray);
+}
+
+.card-img-top{
+  height: 12rem;
+}
+
+.card-author{
+  font-size: small;
+  color: var(--Grayish-Blue)
+}
+
+.card-title{
+  font-size:large
+}
+
+h5:hover{
+  cursor: pointer;
+  color: var(--Lime-Green);
+}
+
+.card-text{
+  font-size: medium;
+  color: var(--Grayish-Blue)
+}
+
+/* CONTAINER 5 */
+.container5{
+  background-color: var(--Dark-Blue);
+  height: 25rem;
+  color: white;
+}
+
+.containerLogos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoLight{
+  margin-bottom: 2rem;
+}
+
+li{
+  list-style: none;
+  font-size: medium;
+  color: var(--Grayish-Blue);
+}
+
+li:hover{
+  color: var(--Lime-Green);
+  cursor: pointer;
+}
+
+.containerButtonAndTrademark{
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonRequestInvite3{
+  width: 10rem;
+  height: 2.5rem;
+  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.tradeMark{
+  font-size: medium;
+  color: var(--Grayish-Blue);
+}
+
+.iconSocial:hover{
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+  cursor: pointer;
+}
+
+
+
+/*******DESKTOP VIEW*******/
+
+@media screen and (min-width: 769px){
+/* NAVBAR */
+.navbar-nav{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageMockups{
+  position: relative;
+  bottom: 7rem;
+  z-index: -1;
+}
+
+.buttonRequestInvite2{
+  margin-right: 100%;
+}
+
+
+/* CHATGPT */
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px; /* Adjust the distance between items */
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Adjust the distance of the line below the text */
+  height: 3px; /* Adjust the thickness of the line */
+  background-color: var(--Lime-Green); /* Change the color as desired */
+  transform: scaleX(0); /* Initially hide the line */
+  transform-origin: center bottom;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1); /* Show the line on hover */
+}
+
+
+
+/* CONTAINER 1  */
+
+.container1{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 32rem;
+}
+
+.container1A {
+  width: 70%;
+  padding: 2rem 8rem 20rem 6rem;
+}
+
+.navbar-brand{
+  padding-left: 6rem;
+}
+
+.buttonRequestInvite1{
+  margin-right: 9rem;
+}
+
+.container1B{
+  background-image: url('images/bg-intro-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 7rem -10rem ;
+  padding-left: 15rem;
+  margin-left: -15rem;
+  position: relative;
+  z-index: -2;
+}
+
+/* CONTAINER 2  */
+
+.container2{
+  padding-left: 6rem;
+  padding-right:60%;
+  width: 100%;
+  position: relative;
+  z-index: -3;
+}
+
+/* CONTAINER 3  */
+.container3{
+  padding-left: 5rem;
+  padding-right: 6rem;
+}
+
+h6{
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* CONTAINER 4  */
+.card{
+  height: 10rem;
+  width: auto;
+  margin-left: 1rem;
+}
+
+.container4{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 6rem;
+}
+
+h4{
+  margin-left: 8rem;
+}
+
+/* CONTAINER 5  */
+.container5{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 12rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; 
+  list-style: none;
+  padding: 0;
+}
+
+.containerButtonAndTrademark{
+  align-items: flex-end;
+}
+
+}
+
+
+
+/*******MOBILE VIEW*******/
+
+@media screen and (max-width: 768px){
+/* NAVBAR */
+	.buttonRequestInvite1{
+    visibility: hidden;
+  }
+
+/* CONTAINER 1  */
+
+.container1{
+  display: flex;
+  flex-direction: column;
+}
+
+.container1A{
+  text-align: center;
+  margin-bottom:5rem;
+}
+
+.container1B{
+  background-image: url('images/bg-intro-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  max-width: 100%;
+  height: auto;
+}
+
+.buttonRequestInvite2{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* CONTAINER 2  */
+.container2{
+  text-align: center;
+}
+
+/* CONTAINER 3  */
+.container3{
+  margin-top: 0px;
+}
+
+
+.icon-space{
+  margin-left: auto;
+}
+
+.row{
+  text-align: center;
+}
+
+/* CONTAINER 4  */
+h4{
+  text-align: center;
+}
+.container4{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  margin-top: 2rem;
+  width: 15rem;
+} 
+
+/* CONTAINER 5  */
+.container5{
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerButtonAndTrademark{
+  align-items: center;
+}
+
+.buttonRequestInvite3{
+  width: 10rem;
+  height: 2.5rem;
+  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.menu{
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0px;
+}
+
+}
